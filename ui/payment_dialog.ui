@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>722</width>
+    <height>484</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #fffff0;
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0" colspan="2">
+    <widget class="QCheckBox" name="checkBox_day">
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox {
+    spacing: 8px;
+    font-size: 15px;
+    color: #5c4033;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #bfa07a;
+    background-color: #fffaf0;
+    border-radius: 3px;
+}
+
+QCheckBox::indicator:hover {
+    border: 2px solid #a07d5e;
+    background-color: #f9f0df;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #d2b48c; /* тёплый коричнево-бежевый */
+    border: 1px solid #a07d5e;
+}
+
+QCheckBox::indicator:disabled {
+    background-color: #f0f0f0;
+    border: 1px solid #cccccc;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Приобрести подписку на один день</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QCheckBox" name="checkBox_year">
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox {
+    spacing: 8px;
+    font-size: 15px;
+    color: #5c4033;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #bfa07a;
+    background-color: #fffaf0;
+    border-radius: 3px;
+}
+
+QCheckBox::indicator:hover {
+    border: 2px solid #a07d5e;
+    background-color: #f9f0df;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #d2b48c; /* тёплый коричнево-бежевый */
+    border: 1px solid #a07d5e;
+}
+
+QCheckBox::indicator:disabled {
+    background-color: #f0f0f0;
+    border: 1px solid #cccccc;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Приобрести подписку на год</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QLabel" name="label_2">
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>62</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>187 500 сум</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QPushButton" name="pushButton_click">
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #f2e6d8;       /* тёплый светлый бежевый */
+    color: #5c4033;                  /* тот же шоколадный, как и в QLabel */
+    border: 1px solid #d2b48c;       /* светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6d2b5;       /* чуть темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #d4b899;       /* эффект нажатия */
+}
+
+QPushButton:disabled {
+    background-color: #333333;
+    color: #aaa;
+    border: 1px solid #ddd;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Click</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>62</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>2 062 500 сум</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLabel" name="label_3">
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>62</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>9 375 сум</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QCheckBox" name="checkBox_month">
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox {
+    spacing: 8px;
+    font-size: 15px;
+    color: #5c4033;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #bfa07a;
+    background-color: #fffaf0;
+    border-radius: 3px;
+}
+
+QCheckBox::indicator:hover {
+    border: 2px solid #a07d5e;
+    background-color: #f9f0df;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #d2b48c; /* тёплый коричнево-бежевый */
+    border: 1px solid #a07d5e;
+}
+
+QCheckBox::indicator:disabled {
+    background-color: #f0f0f0;
+    border: 1px solid #cccccc;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Приобрести подписку на месяц</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="pushButton_bank">
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #f2e6d8;       /* тёплый светлый бежевый */
+    color: #5c4033;                  /* тот же шоколадный, как и в QLabel */
+    border: 1px solid #d2b48c;       /* светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6d2b5;       /* чуть темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #d4b899;       /* эффект нажатия */
+}
+
+QPushButton:disabled {
+    background-color: #333333;
+    color: #aaa;
+    border: 1px solid #ddd;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Оплатить на расчётный счёт</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

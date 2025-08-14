@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HousePrice</class>
+ <widget class="QMainWindow" name="HousePrice">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1255</width>
+    <height>721</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMenuBar {
+    background-color: #fdfdfd;
+    border: 1px solid #cccccc;
+}
+
+QMenuBar::item {
+    spacing: 4px;
+    padding: 6px 14px;
+    background: transparent;
+    color: #333;
+}
+
+QMenuBar::item:selected {
+    background: #cce0ff;
+    color: #000;
+    border-radius: 6px;
+}
+
+QMenu {
+    background-color: #ffffff;
+    border: 1px solid #c0c0c0;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+QMenu::item {
+    padding: 6px 18px;
+    background-color: transparent;
+    color: #333;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background-color: #e6f0ff;
+    color: #000;
+}
+QWidget {
+    background-color: #fffff0;
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="2" colspan="3">
+     <widget class="QTableWidget" name="MainTableForDocs">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::WheelFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::ActionsContextMenu</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget {
+    background-color: #ffffff;
+    border: 1px solid #c0c0c0;
+    border-radius: 8px;
+    gridline-color: #e0e0e0;
+    font-size: 14px;
+    color: #333;
+    selection-background-color: #cce0ff;
+    selection-color: #000;
+}
+
+QHeaderView::section {
+    background-color: #f2f2f2;
+    padding: 6px;
+    border: 1px solid #dcdcdc;
+    font-weight: bold;
+    color: #333;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTableWidget::item {
+    padding: 6px;
+    border: none;
+}
+
+QTableWidget::item:selected {
+    background-color: #cce0ff;
+    color: #000;
+}
+
+QScrollBar:vertical {
+    background: #f2f2f2;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background: #a0a0a0;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #888;
+}
+QWidget {
+    background-color: #f5f5dc;
+}
+
+</string>
+      </property>
+      <property name="tabKeyNavigation">
+       <bool>true</bool>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>false</bool>
+      </property>
+      <property name="showGrid">
+       <bool>true</bool>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::SolidLine</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="cornerButtonEnabled">
+       <bool>true</bool>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>129</number>
+      </attribute>
+      <attribute name="horizontalHeaderHighlightSections">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>true</bool>
+      </attribute>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="search_layer">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid rgb(85, 0, 0);  /* цвет и толщина границы */
+	
+    border-radius: 5px;                  /* радиус скругления углов */
+}</string>
+      </property>
+      <property name="text">
+       <string>Поиск...</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QPushButton" name="New_doc_Button">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #98FB98;
+    color: #333333;
+    border: 2px solid #0078d7;         /* синий акцент */
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6f0ff;         /* светло-синий при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #cce0ff;         /* темнее при нажатии */
+}
+
+QPushButton:disabled {
+    background-color: #f0f0f0;
+    color: #a0a0a0;
+    border: 1px solid #cccccc;
+}
+#pushButton_duplicate {
+    background-color: #f9f9f9;
+    border: 2px solid #28a745;   /* зелёный */
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+#pushButton_duplicate:hover {
+    background-color: #e6ffe9;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Добавить отчёт</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QListWidget" name="sortirovshik_po_datam">
+      <property name="styleSheet">
+       <string notr="true">QListWidget {
+    background-color: #E0EAF5;
+    border: 1px solid #c0c0c0;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+QListWidget::item {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+QListWidget::item:hover {
+    background-color: #e6f0ff;
+    color: #000;
+}
+
+QListWidget::item:selected {
+    background-color: #cce0ff;
+    color: #000;
+    font-weight: bold;
+}
+QWidget {
+    background-color: #cce0ff;
+}
+
+    QListWidget::item {
+        padding: 6px 4px;
+        border-bottom: 3px solid #cccccc;
+    }
+    QListWidget::item:selected {
+        background-color: #a0c4ff;
+    }
+
+</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Все</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>За месяц</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>2025</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>2024</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="copy_button">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #F0E68C;
+    color: #333333;
+    border: 2px solid #0078d7;         /* синий акцент */
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6f0ff;         /* светло-синий при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #cce0ff;         /* темнее при нажатии */
+}
+
+QPushButton:disabled {
+    background-color: #f0f0f0;
+    color: #a0a0a0;
+    border: 1px solid #cccccc;
+}
+#pushButton_duplicate {
+    background-color: #f9f9f9;
+    border: 2px solid #28a745;   /* зелёный */
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+#pushButton_duplicate:hover {
+    background-color: #e6ffe9;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Создать дубликат</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QPushButton" name="delete_button">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #FFC0CB;
+    color: #333333;
+    border: 2px solid #0078d7;         /* синий акцент */
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #DB7093;         /* светло-синий при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #ffe0e0;         /* темнее при нажатии */
+}
+
+QPushButton:disabled {
+    background-color: #f0f0f0;
+    color: #a0a0a0;
+    border: 1px solid #cccccc;
+}
+#pushButton_delete {
+    background-color: #fff;
+    border: 2px solid #dc3545;   /* красный */
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+#pushButton_delete:hover {
+    background-color: #ffe6e6;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Удалить</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1255</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QMenu" name="save_dir">
+    <property name="title">
+     <string>Путь сохранения</string>
+    </property>
+    <addaction name="action_dir"/>
+   </widget>
+   <widget class="QMenu" name="menu_payment_dialog">
+    <property name="title">
+     <string> </string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_user">
+    <property name="title">
+     <string>О программе</string>
+    </property>
+    <addaction name="action_about"/>
+    <addaction name="action_2"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="save_dir"/>
+   <addaction name="menu_payment_dialog"/>
+   <addaction name="menu_user"/>
+  </widget>
+  <action name="action_dir">
+   <property name="text">
+    <string>Выбор папки</string>
+   </property>
+  </action>
+  <action name="action_company_info">
+   <property name="text">
+    <string>Информация об оценочной организации</string>
+   </property>
+  </action>
+  <action name="action_apriser_info">
+   <property name="text">
+    <string>Информация об оценщике</string>
+   </property>
+  </action>
+  <action name="action_payment_cash">
+   <property name="text">
+    <string>Оплатить подписку</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>Проверить подписку</string>
+   </property>
+  </action>
+  <action name="action_check_for_updates">
+   <property name="text">
+    <string>Проверить наличие обновлений</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="text">
+    <string>Пользователь</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Служба поддержки</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>search_layer</tabstop>
+  <tabstop>delete_button</tabstop>
+  <tabstop>copy_button</tabstop>
+  <tabstop>New_doc_Button</tabstop>
+  <tabstop>MainTableForDocs</tabstop>
+  <tabstop>sortirovshik_po_datam</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

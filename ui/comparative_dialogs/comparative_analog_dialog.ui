@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>880</width>
+    <height>617</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMenuBar {
+    background-color: #fdfdfd;
+    border: 1px solid #cccccc;
+}
+
+QMenuBar::item {
+    spacing: 4px;
+    padding: 6px 14px;
+    background: transparent;
+    color: #333;
+}
+
+QMenuBar::item:selected {
+    background: #cce0ff;
+    color: #000;
+    border-radius: 6px;
+}
+
+QMenu {
+    background-color: #ffffff;
+    border: 1px solid #c0c0c0;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+QMenu::item {
+    padding: 6px 18px;
+    background-color: transparent;
+    color: #333;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background-color: #e6f0ff;
+    color: #000;
+}
+QWidget {
+    background-color: #fffff0;
+}
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTableWidget" name="tableWidget_comparative_analog">
+     <property name="styleSheet">
+      <string notr="true"> QTableWidget {
+    background-color: #fffdf5;         /* слегка тёплый фон */
+    color: #5c4033;                    /* основной тёплый текст */
+    border: 1px solid #d2b48c;         /* светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+}
+QHeaderView::section {
+    background-color: #fffdf5;
+    color: #5c4033;
+    padding: 4px;
+    font-size: 13px;
+    font-family: &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="pushButton_analog_OK">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #f2e6d8;       /* тёплый светлый бежевый */
+    color: #5c4033;                  /* тот же шоколадный, как и в QLabel */
+    border: 1px solid #d2b48c;       /* светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6d2b5;       /* чуть темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #d4b899;       /* эффект нажатия */
+}
+
+QPushButton:disabled {
+    background-color: #f5f5f5;
+    color: #aaa;
+    border: 1px solid #ddd;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Выбрать эти аналоги</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

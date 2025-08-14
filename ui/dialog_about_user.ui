@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_about_user</class>
+ <widget class="QDialog" name="Dialog_about_user">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>552</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Oson Baho – программа для оценки недвижимости</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_public_id">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;         
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QPushButton" name="pushButton_copy_id">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #ffffff;
+    color: #333333;
+    border: 2px solid #0078d7;         /* синий акцент */
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6f0ff;         /* светло-синий при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #cce0ff;         /* темнее при нажатии */
+}
+
+QPushButton:disabled {
+    background-color: #f0f0f0;
+    color: #a0a0a0;
+    border: 1px solid #cccccc;
+}
+#pushButton_duplicate {
+    background-color: #f9f9f9;
+    border: 2px solid #28a745;   /* зелёный */
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+#pushButton_duplicate:hover {
+    background-color: #e6ffe9;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Скопировать ID</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="pushButton_ok">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #ffffff;
+    color: #333333;
+    border: 2px solid #0078d7;         /* синий акцент */
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6f0ff;         /* светло-синий при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #cce0ff;         /* темнее при нажатии */
+}
+
+QPushButton:disabled {
+    background-color: #f0f0f0;
+    color: #a0a0a0;
+    border: 1px solid #cccccc;
+}
+#pushButton_duplicate {
+    background-color: #f9f9f9;
+    border: 2px solid #28a745;   /* зелёный */
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+#pushButton_duplicate:hover {
+    background-color: #e6ffe9;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>OK</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

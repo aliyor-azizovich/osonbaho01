@@ -1,0 +1,1351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ukup_window</class>
+ <widget class="QWidget" name="ukup_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1103</width>
+    <height>833</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #fffff0;
+}
+
+QComboBox,
+QTableWidget,
+QLineEdit,
+QDateEdit,
+QTextEdit,
+QTextBrowser {
+    background-color: #fffdf5;
+    color: #5c4033;
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="1" column="2">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">#inner_frame {
+    background-color: #fffff0;
+}
+</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_square">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>62</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Площадь</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="0">
+       <widget class="QLabel" name="label_wall_thickness">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>62</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Толщина стен</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_height">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>62</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Высота</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_length">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>62</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Протяженность</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_volume">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>62</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Объём</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="0">
+       <widget class="QLabel" name="label_junction">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>62</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Примыкание</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_roof">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>62</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Кровля</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_wall_material">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>62</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Материал стен</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="1" colspan="4">
+       <widget class="QComboBox" name="comboBox_junction">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background-color: #fffdf5;
+    color: #5c4033;
+    border: 1px solid #d2b48c;
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 12px;
+}
+
+QComboBox:focus {
+    border: 1px solid #a07d5e;
+    background-color: #fff8e1;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border-left: 1px solid #d2b48c;
+    background-color: #f9f3e5;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+QComboBox::down-arrow {
+    width: 12px;
+    height: 12px;
+    image: none;
+}
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="5">
+       <widget class="QLabel" name="label_title">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>62</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 16px;
+    font-weight: 500;
+    padding: 1px 2px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>ЗАТРАТНЫЙ ПОДХОД    </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" colspan="4">
+       <widget class="QLineEdit" name="lineEdit_volume">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1" colspan="4">
+       <widget class="QComboBox" name="comboBox_floor">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background-color: #fffdf5;
+    color: #5c4033;
+    border: 1px solid #d2b48c;
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 12px;
+}
+
+QComboBox:focus {
+    border: 1px solid #a07d5e;
+    background-color: #fff8e1;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border-left: 1px solid #d2b48c;
+    background-color: #f9f3e5;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+QComboBox::down-arrow {
+    width: 12px;
+    height: 12px;
+    image: none;
+}
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1" colspan="4">
+       <widget class="QComboBox" name="comboBox_wall_material">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background-color: #fffdf5;
+    color: #5c4033;
+    border: 1px solid #d2b48c;
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 12px;
+}
+
+QComboBox:focus {
+    border: 1px solid #a07d5e;
+    background-color: #fff8e1;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border-left: 1px solid #d2b48c;
+    background-color: #f9f3e5;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+QComboBox::down-arrow {
+    width: 12px;
+    height: 12px;
+    image: none;
+}
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="0">
+       <widget class="QLabel" name="label_coating">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>62</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Тип покрытия</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1" colspan="4">
+       <widget class="QComboBox" name="comboBox_foundation">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background-color: #fffdf5;
+    color: #5c4033;
+    border: 1px solid #d2b48c;
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 12px;
+}
+
+QComboBox:focus {
+    border: 1px solid #a07d5e;
+    background-color: #fff8e1;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border-left: 1px solid #d2b48c;
+    background-color: #f9f3e5;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+QComboBox::down-arrow {
+    width: 12px;
+    height: 12px;
+    image: none;
+}
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_floors">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>62</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Этажность</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1" colspan="4">
+       <widget class="QComboBox" name="comboBox_decoration">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background-color: #fffdf5;
+    color: #5c4033;
+    border: 1px solid #d2b48c;
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 12px;
+}
+
+QComboBox:focus {
+    border: 1px solid #a07d5e;
+    background-color: #fff8e1;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border-left: 1px solid #d2b48c;
+    background-color: #f9f3e5;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+QComboBox::down-arrow {
+    width: 12px;
+    height: 12px;
+    image: none;
+}
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="label_foundation">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>62</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Фундамент</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1" colspan="4">
+       <widget class="QComboBox" name="comboBox_overlap">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background-color: #fffdf5;
+    color: #5c4033;
+    border: 1px solid #d2b48c;
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 12px;
+}
+
+QComboBox:focus {
+    border: 1px solid #a07d5e;
+    background-color: #fff8e1;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border-left: 1px solid #d2b48c;
+    background-color: #f9f3e5;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+QComboBox::down-arrow {
+    width: 12px;
+    height: 12px;
+    image: none;
+}
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QLabel" name="label_decoration">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>62</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Отделка</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pushButton_building_choose">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #00FA9A;       /* тёплый светлый бежевый */
+    color: #5c4033;                  /* тот же шоколадный, как и в QLabel */
+    border: 1px solid #d2b48c;       /* светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6d2b5;       /* чуть темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #d4b899;       /* эффект нажатия */
+}
+
+QPushButton:disabled {
+    background-color: #f5f5f5;
+    color: #aaa;
+    border: 1px solid #ddd;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Выберите тип здания</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLabel" name="label_selected_analog_index">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QLabel" name="label_building_choose">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="1" colspan="4">
+       <widget class="QComboBox" name="comboBox_wall_thickness">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background-color: #fffdf5;
+    color: #5c4033;
+    border: 1px solid #d2b48c;
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 12px;
+}
+
+QComboBox:focus {
+    border: 1px solid #a07d5e;
+    background-color: #fff8e1;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border-left: 1px solid #d2b48c;
+    background-color: #f9f3e5;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+QComboBox::down-arrow {
+    width: 12px;
+    height: 12px;
+    image: none;
+}
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="label_overlap">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>62</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Перекрытие</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1" colspan="4">
+       <widget class="QLineEdit" name="lineEdit_length">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1" colspan="4">
+       <widget class="QComboBox" name="comboBox_roof">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background-color: #fffdf5;
+    color: #5c4033;
+    border: 1px solid #d2b48c;
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 12px;
+}
+
+QComboBox:focus {
+    border: 1px solid #a07d5e;
+    background-color: #fff8e1;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border-left: 1px solid #d2b48c;
+    background-color: #f9f3e5;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+QComboBox::down-arrow {
+    width: 12px;
+    height: 12px;
+    image: none;
+}
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="1" colspan="4">
+       <widget class="QComboBox" name="comboBox_coating">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background-color: #fffdf5;
+    color: #5c4033;
+    border: 1px solid #d2b48c;
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 12px;
+}
+
+QComboBox:focus {
+    border: 1px solid #a07d5e;
+    background-color: #fff8e1;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border-left: 1px solid #d2b48c;
+    background-color: #f9f3e5;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+QComboBox::down-arrow {
+    width: 12px;
+    height: 12px;
+    image: none;
+}
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" colspan="4">
+       <widget class="QLineEdit" name="lineEdit_height">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="4">
+       <widget class="QLineEdit" name="lineEdit_square">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="0">
+       <widget class="QLabel" name="label_wall_height">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>62</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Высота стен</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="1" colspan="2">
+       <widget class="QLabel" name="label_price_result">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="1">
+       <widget class="QPushButton" name="pushButton_choose_analog">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #f2e6d8;       /* тёплый светлый бежевый */
+    color: #5c4033;                  /* тот же шоколадный, как и в QLabel */
+    border: 1px solid #d2b48c;       /* светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6d2b5;       /* чуть темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #d4b899;       /* эффект нажатия */
+}
+
+QPushButton:disabled {
+    background-color: #f5f5f5;
+    color: #aaa;
+    border: 1px solid #ddd;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Подобрать аналог</string>
+        </property>
+       </widget>
+      </item>
+      <item row="20" column="1">
+       <widget class="QPushButton" name="pushButton_deviations_wear">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #f2e6d8;       /* тёплый светлый бежевый */
+    color: #5c4033;                  /* тот же шоколадный, как и в QLabel */
+    border: 1px solid #d2b48c;       /* светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6d2b5;       /* чуть темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #d4b899;       /* эффект нажатия */
+}
+
+QPushButton:disabled {
+    background-color: #f5f5f5;
+    color: #aaa;
+    border: 1px solid #ddd;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Внести корректровки и рассчитать износ</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="1" colspan="4">
+       <widget class="QComboBox" name="comboBox_wall_height">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background-color: #fffdf5;
+    color: #5c4033;
+    border: 1px solid #d2b48c;
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 12px;
+}
+
+QComboBox:focus {
+    border: 1px solid #a07d5e;
+    background-color: #fff8e1;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border-left: 1px solid #d2b48c;
+    background-color: #f9f3e5;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+QComboBox::down-arrow {
+    width: 12px;
+    height: 12px;
+    image: none;
+}
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="22" column="5">
+       <widget class="QPushButton" name="pushButton_next">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #ffffff;
+    color: #333333;
+    border: 2px solid #0078d7;         /* синий акцент */
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6f0ff;         /* светло-синий при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #cce0ff;         /* темнее при нажатии */
+}
+
+QPushButton:disabled {
+    background-color: #f0f0f0;
+    color: #a0a0a0;
+    border: 1px solid #cccccc;
+}
+#pushButton_duplicate {
+    background-color: #f9f9f9;
+    border: 2px solid #28a745;   /* зелёный */
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+#pushButton_duplicate:hover {
+    background-color: #e6ffe9;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Далее</string>
+        </property>
+       </widget>
+      </item>
+      <item row="21" column="0" colspan="5">
+       <widget class="QTextBrowser" name="textBrowser_analog">
+        <property name="maximumSize">
+         <size>
+          <width>1500</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTextBrowser {
+    background-color: #fffdf5;         /* слегка тёплый фон */
+    color: #5c4033;                    /* основной тёплый текст */
+    border: 1px solid #d2b48c;         /* светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="20" column="5">
+       <widget class="QPushButton" name="pushButton_liter_delete">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #f6e6d8;       /* тёплый светлый бежевый */
+    color: #5c4033;                  /* тот же шоколадный, как и в QLabel */
+    border: 1px solid #d2b48c;       /* светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #ffd6d6;       /* чуть темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #fae0e0;       /* эффект нажатия */
+}
+
+QPushButton:disabled {
+    background-color: #f5f5f5;
+    color: #aaa;
+    border: 1px solid #ddd;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Удалить</string>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="5">
+       <widget class="QPushButton" name="pushButton_edit">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #f6e6d8;       /* тёплый светлый бежевый */
+    color: #5c4033;                  /* тот же шоколадный, как и в QLabel */
+    border: 1px solid #d2b48c;       /* светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6d2b5;       /* чуть темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #d5b899;       /* эффект нажатия */
+}
+
+QPushButton:disabled {
+    background-color: #f5f5f5;
+    color: #aaa;
+    border: 1px solid #ddd;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Редактировать</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="5">
+       <widget class="QPushButton" name="pushButton_liter_dublicate">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #f6e6d8;       /* тёплый светлый бежевый */
+    color: #5c4033;                  /* тот же шоколадный, как и в QLabel */
+    border: 1px solid #d2b48c;       /* светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6d2b5;       /* чуть темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #d5b899;       /* эффект нажатия */
+}
+
+QPushButton:disabled {
+    background-color: #f5f5f5;
+    color: #aaa;
+    border: 1px solid #ddd;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Сделать дубликат</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5" rowspan="15">
+       <widget class="QTableWidget" name="TableWidget_liter_list">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>600</width>
+          <height>1600</height>
+         </size>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>1600</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableWidget {
+    background-color: #ffffff;
+    border: 1px solid #c0c0c0;
+    border-radius: 8px;
+    gridline-color: #e0e0e0;
+    font-size: 14px;
+    color: #333;
+    selection-background-color: #cce0ff;
+    selection-color: #000;
+}
+
+QHeaderView::section {
+    background-color: #f2f2f2;
+    padding: 6px;
+    border: 1px solid #dcdcdc;
+    font-weight: bold;
+    color: #333;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTableWidget::item {
+    padding: 6px;
+    border: none;
+}
+
+QTableWidget::item:selected {
+    background-color: #cce0ff;
+    color: #000;
+}
+
+QScrollBar:vertical {
+    background: #f2f2f2;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background: #a0a0a0;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #888;
+}
+QWidget {
+    background-color: #f5f5dc;
+}
+
+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

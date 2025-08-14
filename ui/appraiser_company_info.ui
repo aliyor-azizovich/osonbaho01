@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>547</width>
+    <height>778</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #fffff0;
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="6" column="0" colspan="2">
+    <widget class="QLabel" name="label_6">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>№ Страхового полиса</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Адрес</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_11">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>ИНН</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Дата выдачи лицензии</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>№ лицензии</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="2">
+    <widget class="QLabel" name="label_4">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Страховочная компания</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Название компании</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_company_name">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="0" colspan="4">
+    <widget class="QPushButton" name="pushButton_load_insurance">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #f2e6d8;       /* тёплый светлый бежевый */
+    color: #5c4033;                  /* тот же шоколадный, как и в QLabel */
+    border: 1px solid #d2b48c;       /* светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6d2b5;       /* чуть темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #d4b899;       /* эффект нажатия */
+}
+
+QPushButton:disabled {
+    background-color: #f5f5f5;
+    color: #aaa;
+    border: 1px solid #ddd;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Загрузить полис страхования</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>МФО</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0" colspan="4">
+    <widget class="QPushButton" name="pushButton_load_logo">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #f2e6d8;       /* тёплый светлый бежевый */
+    color: #5c4033;                  /* тот же шоколадный, как и в QLabel */
+    border: 1px solid #d2b48c;       /* светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6d2b5;       /* чуть темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #d4b899;       /* эффект нажатия */
+}
+
+QPushButton:disabled {
+    background-color: #f5f5f5;
+    color: #aaa;
+    border: 1px solid #ddd;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Загрузить логотип</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0" colspan="2">
+    <widget class="QLabel" name="label_10">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Расчётный счёт</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="4">
+    <widget class="QPushButton" name="pushButton_load_license">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #f2e6d8;       /* тёплый светлый бежевый */
+    color: #5c4033;                  /* тот же шоколадный, как и в QLabel */
+    border: 1px solid #d2b48c;       /* светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6d2b5;       /* чуть темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #d4b899;       /* эффект нажатия */
+}
+
+QPushButton:disabled {
+    background-color: #f5f5f5;
+    color: #aaa;
+    border: 1px solid #ddd;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Загрузить лицензию</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="2" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_MFO">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="2" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_bank_account">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="4">
+    <widget class="QPushButton" name="pushButton_registration">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #f2e6d8;       /* тёплый светлый бежевый */
+    color: #5c4033;                  /* тот же шоколадный, как и в QLabel */
+    border: 1px solid #d2b48c;       /* светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6d2b5;       /* чуть темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #d4b899;       /* эффект нажатия */
+}
+
+QPushButton:disabled {
+    background-color: #f5f5f5;
+    color: #aaa;
+    border: 1px solid #ddd;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Загрузить свидетельство о регистрации</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0" colspan="2">
+    <widget class="QLabel" name="label_7">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Дата выдачи полиса</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_license_date">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_insurance_name">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_insurance_number">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_license_number">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_incurance_date">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="2" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_bank">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0" colspan="2">
+    <widget class="QLabel" name="label_8">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Обсуживающий банк</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_adress">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_INN">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="4">
+    <widget class="QPushButton" name="pushButton_ok">
+     <property name="styleSheet">
+      <string notr="true">QPushButton  {
+    background-color: #eedec4;  /* чуть светлее, с золотистым оттенком */
+    color: #5c4033;
+    border: 1px solid #d2b48c;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QPushButtont:hover {
+    background-color: #e3cfae;
+}</string>
+     </property>
+     <property name="text">
+      <string>OK</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

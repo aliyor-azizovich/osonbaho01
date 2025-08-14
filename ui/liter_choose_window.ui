@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>liter_filter_dialog</class>
+ <widget class="QDialog" name="liter_filter_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1237</width>
+    <height>891</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_8">
+   <item row="0" column="0">
+    <widget class="QStackedWidget" name="params_for_liter">
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="page_1">
+      <widget class="QPushButton" name="pushButton_cancel">
+       <property name="geometry">
+        <rect>
+         <x>1020</x>
+         <y>830</y>
+         <width>161</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_ok">
+       <property name="geometry">
+        <rect>
+         <x>810</x>
+         <y>830</y>
+         <width>191</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>OK</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_buildings">
+       <property name="geometry">
+        <rect>
+         <x>-30</x>
+         <y>60</y>
+         <width>1185</width>
+         <height>741</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QWidget" name="gridLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>0</y>
+          <width>1141</width>
+          <height>731</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_for_checkboxes"/>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_selected_building_2">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>11</y>
+         <width>339</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Выберите тип здания</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_square">
+         <property name="text">
+          <string>Площадь (м2)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="square"/>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_high">
+         <property name="text">
+          <string>Высота (м)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLineEdit" name="high"/>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="label_weight">
+         <property name="text">
+          <string>Объём (м3)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QLineEdit" name="weight"/>
+       </item>
+       <item row="0" column="6">
+        <widget class="QLabel" name="label_length">
+         <property name="text">
+          <string>Протяженность</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="7">
+        <widget class="QLineEdit" name="length"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_floor">
+         <property name="text">
+          <string>Этажность</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="floor"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="label_wall_material">
+         <property name="text">
+          <string>Материал стен</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QComboBox" name="wall_material"/>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLabel" name="label_roof">
+         <property name="text">
+          <string>Кровля</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QComboBox" name="roof"/>
+       </item>
+       <item row="1" column="6">
+        <widget class="QLabel" name="label_foundation">
+         <property name="text">
+          <string>Фундамент</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="7">
+        <widget class="QComboBox" name="foundation"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_overlap">
+         <property name="text">
+          <string>Перекрытие</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="overlap"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="label_flooring">
+         <property name="text">
+          <string>Полы</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QComboBox" name="flooring"/>
+       </item>
+       <item row="2" column="4">
+        <widget class="QLabel" name="label_decoration">
+         <property name="text">
+          <string>Отделка</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="QComboBox" name="decoration"/>
+       </item>
+       <item row="2" column="6">
+        <widget class="QLabel" name="label_wall_junction">
+         <property name="text">
+          <string>Примыкание</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="7">
+        <widget class="QComboBox" name="wall_junction"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_wall_high">
+         <property name="text">
+          <string>Высота</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="wall_high"/>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLabel" name="label_wall_thickness">
+         <property name="text">
+          <string>Толщина стен</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QComboBox" name="wall_thickness"/>
+       </item>
+       <item row="4" column="8">
+        <widget class="QPushButton" name="pushButton_back_to_page_1">
+         <property name="text">
+          <string>Назад</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2" colspan="3">
+        <widget class="QLabel" name="label_selected_building">
+         <property name="styleSheet">
+          <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>ТИП ЗДАНИЯ</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0" colspan="9">
+        <widget class="QTableWidget" name="filtered_table"/>
+       </item>
+       <item row="7" column="7" colspan="2">
+        <widget class="QPushButton" name="pushButton_choose_analog">
+         <property name="text">
+          <string>Выбрать этот аналог</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="4" column="2">
+        <widget class="QGroupBox" name="groupBox_high_correct">
+         <property name="title">
+          <string/>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_high_correction">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Корректировки на высоту</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_fact_high">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_correction">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_high_result">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QGroupBox" name="groupBox__final_price">
+         <property name="title">
+          <string/>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_final_correction_sum">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QLabel" name="label_final">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Итоговая стоимость по УКУП с учётом всех корректировок</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_final_price">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="2">
+           <widget class="QPushButton" name="pushButton_final_base_price">
+            <property name="text">
+             <string>Применить корректировки</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0" rowspan="4" colspan="2">
+        <widget class="QTableWidget" name="tableWidget_construction"/>
+       </item>
+       <item row="7" column="1">
+        <widget class="QPushButton" name="pushButton_back_to_page_2">
+         <property name="text">
+          <string>Назад</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QPushButton" name="pushButton_to_Page4">
+         <property name="text">
+          <string>Применить</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_price_per_m2">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Стоимость по УКУП</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_4">
+      <layout class="QGridLayout" name="gridLayout_9">
+       <item row="3" column="4">
+        <widget class="QPushButton" name="pushButton_save_liter_cost">
+         <property name="text">
+          <string>Сохранить</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QPushButton" name="pushButton_back_to_page3">
+         <property name="text">
+          <string>Назад</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="5">
+        <widget class="QTableWidget" name="tableWidget_replacement_cost"/>
+       </item>
+       <item row="1" column="0" colspan="5">
+        <widget class="QTableWidget" name="tableWidget_wear_calculation"/>
+       </item>
+       <item row="2" column="0" colspan="5">
+        <widget class="QTableWidget" name="tableWidget_valuation_cost"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

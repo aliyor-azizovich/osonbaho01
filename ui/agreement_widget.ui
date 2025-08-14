@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AgreementWidget</class>
+ <widget class="QWidget" name="AgreementWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1225</width>
+    <height>687</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Согласование результатов оценки</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QWidget{ background:#fffff0; font-family:&quot;Segoe UI&quot;,&quot;Arial&quot;,sans-serif; }
+
+QGroupBox{
+    background-color:#fffff0;
+    border:1px solid #e0e0e0;
+    border-radius:8px;
+    margin-top:12px;
+}
+
+QLabel{ background-color:transparent; color:#0f172a; }
+QLabel.muted{ color:#475569; }
+QLabel.kpi{ font-size:16px; font-weight:700; }
+
+QFrame#finalPanel{
+    background:#e8f7ef;
+    border:1px solid #c6e9d5;
+    border-radius:10px;
+}
+QFrame#finalPanel QLabel{ background:transparent; }
+
+QPushButton{
+    background:#ffffff;
+    color:#1f2937;
+    border:2px solid #0078d7;
+    border-radius:8px;
+    padding:8px 16px;
+    font-weight:600;
+}
+QPushButton:hover{ background:#e6f0ff; }
+QPushButton:pressed{ background:#cce0ff; }
+QPushButton#pushButton_upload_report{ border-color:#1e7a56; }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="rootLayout">
+   <property name="spacing">
+    <number>12</number>
+   </property>
+   <property name="leftMargin">
+    <number>16</number>
+   </property>
+   <property name="topMargin">
+    <number>16</number>
+   </property>
+   <property name="rightMargin">
+    <number>16</number>
+   </property>
+   <property name="bottomMargin">
+    <number>12</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="headerLayout">
+     <item>
+      <widget class="QLabel" name="label_header">
+       <property name="styleSheet">
+        <string notr="true">QLabel{ font-size:22px; font-weight:800; }</string>
+       </property>
+       <property name="text">
+        <string>Согласование результатов оценки</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="headerSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_agreement_method">
+     <property name="styleSheet">
+      <string notr="true">QLabel{ font-size:13px; color:#334155; }</string>
+     </property>
+     <property name="text">
+      <string>Метод согласования: Среднее арифметическое</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="approachesRow" stretch="1,1">
+     <property name="spacing">
+      <number>12</number>
+     </property>
+     <item>
+      <widget class="QGroupBox" name="group_cost">
+       <property name="title">
+        <string/>
+       </property>
+       <layout class="QVBoxLayout" name="cost_v">
+        <property name="leftMargin">
+         <number>12</number>
+        </property>
+        <property name="topMargin">
+         <number>12</number>
+        </property>
+        <property name="rightMargin">
+         <number>12</number>
+        </property>
+        <property name="bottomMargin">
+         <number>12</number>
+        </property>
+        <item>
+         <widget class="QCheckBox" name="checkBox_cost">
+          <property name="font">
+           <font>
+            <family>Segoe UI,Arial,sans-serif</family>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QCheckBox{ font-size:12px; }</string>
+          </property>
+          <property name="text">
+           <string>Затратный подход: —</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_building_land">
+          <property name="font">
+           <font>
+            <family>Segoe UI,Arial,sans-serif</family>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{ font-size:12px; }</string>
+          </property>
+          <property name="text">
+           <string>Стоимость улучшений: — сум
+Права на землю: — сум</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_cost_weighted_average">
+          <property name="styleSheet">
+           <string notr="true">QLabel{ font-size:16px; font-weight:700; }</string>
+          </property>
+          <property name="text">
+           <string>—</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="costSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="group_comparative">
+       <property name="title">
+        <string/>
+       </property>
+       <layout class="QVBoxLayout" name="comp_v">
+        <property name="leftMargin">
+         <number>12</number>
+        </property>
+        <property name="topMargin">
+         <number>12</number>
+        </property>
+        <property name="rightMargin">
+         <number>12</number>
+        </property>
+        <property name="bottomMargin">
+         <number>12</number>
+        </property>
+        <item>
+         <widget class="QCheckBox" name="checkBox_comparative">
+          <property name="styleSheet">
+           <string notr="true">QCheckBox{ font-size:12px; }</string>
+          </property>
+          <property name="text">
+           <string>Сравнительный подход: —</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_comparative_weighted_average">
+          <property name="styleSheet">
+           <string notr="true">QLabel{ font-size:16px; font-weight:700; }</string>
+          </property>
+          <property name="text">
+           <string>—</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="compSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QFrame" name="finalPanel">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <layout class="QHBoxLayout" name="finalLayout">
+      <property name="leftMargin">
+       <number>16</number>
+      </property>
+      <property name="topMargin">
+       <number>12</number>
+      </property>
+      <property name="rightMargin">
+       <number>16</number>
+      </property>
+      <property name="bottomMargin">
+       <number>12</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_final_cost">
+        <property name="styleSheet">
+         <string notr="true">QLabel{ font-size:18px; font-weight:800; }</string>
+        </property>
+        <property name="text">
+         <string>Итоговая стоимость: н/д</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="finalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonsLayout">
+     <item>
+      <spacer name="btnsLeftSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_final_save">
+       <property name="text">
+        <string>Сохранить</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="btnsRightSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

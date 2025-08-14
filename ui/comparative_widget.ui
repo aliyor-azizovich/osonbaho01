@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1225</width>
+    <height>687</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMenuBar {
+    background-color: #fdfdfd;
+    border: 1px solid #cccccc;
+}
+
+QMenuBar::item {
+    spacing: 4px;
+    padding: 6px 14px;
+    background: transparent;
+    color: #333;
+}
+
+QMenuBar::item:selected {
+    background: #cce0ff;
+    color: #000;
+    border-radius: 6px;
+}
+
+QMenu {
+    background-color: #ffffff;
+    border: 1px solid #c0c0c0;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+QMenu::item {
+    padding: 6px 18px;
+    background-color: transparent;
+    color: #333;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background-color: #e6f0ff;
+    color: #000;
+}
+QWidget {
+    background-color: #fffff0;
+}
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QPushButton" name="pushButton_choose_comparative_analogs">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #ffffff;
+    color: #333333;
+    border: 2px solid #0078d7;         /* синий акцент */
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6f0ff;         /* светло-синий при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #cce0ff;         /* темнее при нажатии */
+}
+
+QPushButton:disabled {
+    background-color: #f0f0f0;
+    color: #a0a0a0;
+    border: 1px solid #cccccc;
+}
+#pushButton_duplicate {
+    background-color: #f9f9f9;
+    border: 2px solid #28a745;   /* зелёный */
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+#pushButton_duplicate:hover {
+    background-color: #e6ffe9;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Подобрать аналоги</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="pushButton_check_comparative_analogs">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #ffffff;
+    color: #333333;
+    border: 2px solid #0078d7;         /* синий акцент */
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6f0ff;         /* светло-синий при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #cce0ff;         /* темнее при нажатии */
+}
+
+QPushButton:disabled {
+    background-color: #f0f0f0;
+    color: #a0a0a0;
+    border: 1px solid #cccccc;
+}
+#pushButton_duplicate {
+    background-color: #f9f9f9;
+    border: 2px solid #28a745;   /* зелёный */
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+#pushButton_duplicate:hover {
+    background-color: #e6ffe9;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Проверить актуальность аналогов</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QTableWidget" name="tableWidget_comparative_valuate">
+     <property name="styleSheet">
+      <string notr="true"> QTableWidget {
+    background-color: #fffdf5;         /* слегка тёплый фон */
+    color: #5c4033;                    /* основной тёплый текст */
+    border: 1px solid #d2b48c;         /* светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+}
+QHeaderView::section {
+    background-color: #fffdf5;
+    color: #5c4033;
+    padding: 4px;
+    font-size: 13px;
+    font-family: &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_comparative_final_cost">
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>62</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QPushButton" name="pushButton_next">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #ffffff;
+    color: #333333;
+    border: 2px solid #0078d7;         /* синий акцент */
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6f0ff;         /* светло-синий при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #cce0ff;         /* темнее при нажатии */
+}
+
+QPushButton:disabled {
+    background-color: #f0f0f0;
+    color: #a0a0a0;
+    border: 1px solid #cccccc;
+}
+#pushButton_duplicate {
+    background-color: #f9f9f9;
+    border: 2px solid #28a745;   /* зелёный */
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+#pushButton_duplicate:hover {
+    background-color: #e6ffe9;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Далее</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="pushButton_save_analogs_to_pdf">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #ffffff;
+    color: #333333;
+    border: 2px solid #0078d7;         /* синий акцент */
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6f0ff;         /* светло-синий при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #cce0ff;         /* темнее при нажатии */
+}
+
+QPushButton:disabled {
+    background-color: #f0f0f0;
+    color: #a0a0a0;
+    border: 1px solid #cccccc;
+}
+#pushButton_duplicate {
+    background-color: #f9f9f9;
+    border: 2px solid #28a745;   /* зелёный */
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+#pushButton_duplicate:hover {
+    background-color: #e6ffe9;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Сохранить аналоги в PDF</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

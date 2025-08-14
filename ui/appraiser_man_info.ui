@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>596</width>
+    <height>808</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #fffff0;
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>№ сертификата</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_sertificate_date">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2">
+    <widget class="QPushButton" name="pushButton_ok">
+     <property name="styleSheet">
+      <string notr="true">QPushButton  {
+    background-color: #eedec4;  /* чуть светлее, с золотистым оттенком */
+    color: #5c4033;
+    border: 1px solid #d2b48c;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QPushButtont:hover {
+    background-color: #e3cfae;
+}</string>
+     </property>
+     <property name="text">
+      <string>OK</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Фамилия оценщика</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_surname">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_sertificate_number">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Дата выдачи сертификата</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QPushButton" name="pushButton_load_sertificate">
+     <property name="styleSheet">
+      <string notr="true">QPushButton  {
+    background-color: #eedec4;  /* чуть светлее, с золотистым оттенком */
+    color: #5c4033;
+    border: 1px solid #d2b48c;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QPushButtont:hover {
+    background-color: #e3cfae;
+}</string>
+     </property>
+     <property name="text">
+      <string>Загрузить сертификат</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #5c4033;          /* тёмно-серый текст */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Имя оценщика</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_name">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #fffdf5;           /* чуть отличающийся от фона */
+    color: #5c4033;                      /* шоколадный текст */
+    border: 1px solid #d2b48c;           /* тёплая светло-коричневая рамка */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a07d5e;           /* выделение рамки при фокусе */
+    background-color: #fff8e1;
+}
+
+QLineEdit:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
